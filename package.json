@@ -1,0 +1,44 @@
+{
+  "name": "next-shop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": " prettier . --write **/*.{ts,tsx,css}",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm format",
+      "npm lint --fix"
+    ]
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-next": "14.2.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "husky": "^9.1.0",
+    "lint-staged": "^15.2.7",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
